@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  @font-face {
+    font-family: 'banimode';
+    src: url(../../../public/a52ed9519e94f900-s.p.woff2) format('woff2');
+  }
+}
