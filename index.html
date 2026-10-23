@@ -1,13 +1,95 @@
 <!doctype html>
-<html lang="en">
+<html dir="rtl" lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>web-2-project-2</title>
+    <link rel="stylesheet" href="./src/assets/css/main.css" />
   </head>
   <body>
-    <div id="app"></div>
+    <div class="">
+      <!-- start header -->
+      <header class="flex items-center pt-10 px-4">
+        <!-- start header top -->
+        <div class="flex items-center gap-3 bg-rose-300">
+          <div class="cursor-pointer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="none"
+              viewBox="0 0 32 32"
+            >
+              <g
+                stroke="#101010"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                clip-path="url(#cart_svg__a)"
+              >
+                <path
+                  d="M26.134 8.623 23.867 5.6a4 4 0 0 0-3.2-1.6h-9.333a4 4 0 0 0-3.2 1.6L5.867 8.623a2.66 2.66 0 0 0-.533 1.6V24a4 4 0 0 0 4 4h13.333a4 4 0 0 0 4-4V10.223c0-.578-.186-1.139-.533-1.6"
+                ></path>
+                <path d="M20 13.333a4 4 0 1 1-8 0M26.512 9.333H5.488"></path>
+              </g>
+              <defs>
+                <clipPath id="cart_svg__a">
+                  <path fill="#fff" d="M0 0h32v32H0z"></path>
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <button
+            class="h-12 flex items-center bg-gradient-to-r from-[#299054] to-[#1AAF69] rounded-full"
+          >
+            <span
+              class="px-4 text-base text-white font-semibold font-[banimode]"
+            >
+              ورود / ثبت‌نام
+            </span>
+          </button>
+        </div>
+        <div class="h-10 flex items-center">
+          <div class="">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+            >
+              <g
+                stroke="#101010"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                clip-path="url(#search_svg__a)"
+              >
+                <path
+                  d="M15.714 6.838a6.276 6.276 0 1 1-8.876 8.876 6.276 6.276 0 0 1 8.876-8.876M19 19l-3.29-3.29"
+                ></path>
+              </g>
+              <defs>
+                <clipPath id="search_svg__a">
+                  <path fill="#fff" d="M0 0h24v24H0z"></path>
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <form action="">
+            <input
+              type="search"
+              name="search-box"
+              placeholder="جست‌وجو میان هزاران برند و صدها هزار کالا"
+              class="bg-karim h-10"
+            />
+          </form>
+        </div>
+        <div class=""></div>
+        <!-- end header top -->
+      </header>
+      <!-- end header -->
+    </div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
