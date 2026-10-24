@@ -7,7 +7,11 @@ export default {
         banimode:["banimode"]
       },
       colors:{
-        karim:"#ff0000"
+        gray50:"#EDEDED",
+        gray100:"#F5F5F7",
+        gray200:"#9CA3AF",
+        gray700:"#53565A",
+        green300:"#00BF6F",
       },
     },
   },
