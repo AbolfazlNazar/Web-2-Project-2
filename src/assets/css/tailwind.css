@@ -3,7 +3,16 @@
 @tailwind utilities;
 @layer base {
   @font-face {
-    font-family: 'banimode';
-    src: url(../../../public/a52ed9519e94f900-s.p.woff2) format('woff2');
+    font-family: "banimode";
+    src: url(../../../public/a52ed9519e94f900-s.p.woff2) format("woff2");
+  }
+}
+@layer components {
+  .menu{
+    @apply text-sm font-banimode after:content-[''] after:w-full after:h-0.5 after:bg-green300 after:absolute after:-bottom-2 after:right-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform duration-75 after:origin-right
+  }
+  .submenu {
+    @apply relative
+                after:content-[''] after:w-full after:h-0.5 after:bg-green300 after:absolute after:-bottom-2 after:right-0 after:scale-x-0 hover:after:scale-x-50 after:transition-transform duration-75 after:origin-center hover:fill
   }
 }
