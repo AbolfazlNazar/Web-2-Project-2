@@ -15,9 +15,6 @@ export default {
       },
     },
   },
-  plugins: {
-    taiwindcss:{},
-    autoprefixer:{},
-  },
+  plugins: [],
 }
 
