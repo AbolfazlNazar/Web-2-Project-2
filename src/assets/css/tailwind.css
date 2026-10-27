@@ -9,10 +9,15 @@
 }
 @layer components {
   .menu{
-    @apply text-sm font-banimode after:content-[''] after:w-full after:h-0.5 after:bg-green300 after:absolute after:-bottom-2 after:right-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform duration-75 after:origin-right
+    @apply text-sm font-banimode after:content-[''] after:w-full after:h-0.5 after:bg-green300 after:absolute after:-bottom-2 after:right-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform duration-300 after:origin-right pt-1
   }
   .submenu {
     @apply relative
-                after:content-[''] after:w-full after:h-0.5 after:bg-green300 after:absolute after:-bottom-2 after:right-0 after:scale-x-0 hover:after:scale-x-50 after:transition-transform duration-75 after:origin-center hover:fill
+                after:content-[''] after:w-full after:h-0.5 after:bg-green300 after:absolute after:-bottom-2 after:right-0 after:scale-x-0 group-hover:after:scale-x-100 after:transition-transform duration-300 after:origin-center font-banimode text-sm
+  } 
+}
+@layer utilities{
+  .cscroll::-webkit-scrollbar{
+    @apply w-2 h-2
   }
 }
