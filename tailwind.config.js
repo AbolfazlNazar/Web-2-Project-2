@@ -7,6 +7,7 @@ export default {
         banimode: ["banimode"],
       },
       colors: {
+        white100:"#F5F5F7",
         gray50: "#EDEDED",
         gray75:"#FBFBFB",
         gray100: "#F5F5F7",

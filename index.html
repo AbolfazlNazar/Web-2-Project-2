@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="./src/assets/css/main.css" />
   </head>
   <body>
-    <div class="">
+    <div class="lg:max-w-screen-xl m-auto">
       <!-- start header -->
-      <header class="lg:max-w-screen-xl m-auto">
+      <header class="">
         <!-- start header top -->
         <div class="flex items-center justify-between pt-10 px-4">
           <div class="flex items-center gap-3">
@@ -742,159 +742,343 @@
         <!-- end header bottom -->
       </header>
       <!-- end header -->
+      <!-- main start -->
+      <main class="px-6">
+        <!-- main line 1 start -->
+        <div class="grid grid-cols-3 gap-4 ">
+          <!-- main 1 right start -->
+          <div class="relative flex justify-start col-span-2">
+            <div class="relative w-full overflow-hidden rounded-2xl">
+              <!-- خود Carousel -->
+              <div
+                id="mainCarousel"
+                dir="ltr"
+                class="carousel flex h-[396.87px]  flex-nowrap snap-x snap-mandatory overflow-x-auto scroll-smooth rounded-2xl cursor-pointer"
+              >
+                <div class="carousel-item w-full shrink-0 snap-start">
+                  <img
+                    src="./src/assets/image/imgi_12_1793515378.jpg"
+                    class="h-full w-full object-cover"
+                    alt="Slide 1"
+                  />
+                </div>
+                <div class="carousel-item w-full shrink-0 snap-start">
+                  <img
+                    src="./src/assets/image/imgi_13_1793453889.jpg"
+                    class="h-full w-full object-cover"
+                    alt="Slide 2"
+                  />
+                </div>
+                <div class="carousel-item w-full shrink-0 snap-start">
+                  <img
+                    src="./src/assets/image/imgi_14_1793344158.jpg"
+                    class="h-full w-full object-cover"
+                    alt="Slide 3"
+                  />
+                </div>
+                <div class="carousel-item w-full shrink-0 snap-start">
+                  <img
+                    src="./src/assets/image/imgi_15_1793430415.jpg"
+                    class="h-full w-full object-cover"
+                    alt="Slide 4"
+                  />
+                </div>          
+                <div class="carousel-item w-full shrink-0 snap-start">
+                  <img
+                    src="./src/assets/image/imgi_235_1793248825.jpg"
+                    class="h-full w-full object-cover"
+                    alt="Slide 5"
+                  />
+                </div>
+                <div class="carousel-item w-full shrink-0 snap-start">
+                  <img
+                    src="./src/assets/image/imgi_24_1793455738.jpg"
+                    class="h-full w-full object-cover"
+                    alt="Slide 6"
+                  />
+                </div>
+                <div class="carousel-item w-full shrink-0 snap-start">
+                  <img
+                    src="./src/assets/image/imgi_25_1793197929.jpg"
+                    class="h-full w-full object-cover"
+                    alt="Slide 7"
+                  />
+                </div>
+                <div class="carousel-item w-full shrink-0 snap-start">
+                  <img
+                    src="./src/assets/image/imgi_239_1793196073.jpg"
+                    class="h-full w-full object-cover"
+                    alt="Slide 8"
+                  />
+                </div>
+                <div class="carousel-item w-full shrink-0 snap-start">
+                  <img
+                    src="./src/assets/image/imgi_241_1793105246.jpg"
+                    class="h-full w-full object-cover"
+                    alt="Slide 9"
+                  />
+                </div>
+                <div class="carousel-item w-full shrink-0 snap-start">
+                  <img
+                    src="./src/assets/image/imgi_242_1793090946.jpg"
+                    class="h-full w-full object-cover"
+                    alt="Slide 10"
+                  />
+                </div>
+              </div>
+              <!-- Pagination خارج از Carousel -->
+              <div
+                id="carouselPagination"
+                class="w-[500px] absolute bottom-5 left-60 z-30 flex -translate-x-1/2 items-center gap-2"
+              >
+                <button
+                  data-slide="0"
+                  aria-label="Slide 1"
+                  class="h-[10px] w-[25px] shrink-0 rounded-full border border-black bg-white transition-all duration-300"
+                ></button>
+                <button
+                  data-slide="1"
+                  aria-label="Slide 2"
+                  class="h-[10px] w-[10px] shrink-0 rounded-full border border-black bg-white transition-all duration-300"
+                ></button>
+                <button
+                  data-slide="2"
+                  aria-label="Slide 3"
+                  class="h-[10px] w-[10px] shrink-0 rounded-full border border-black bg-white transition-all duration-300"
+                ></button>
+                <button
+                  data-slide="3"
+                  aria-label="Slide 4"
+                  class="h-[10px] w-[10px] shrink-0 rounded-full border border-black bg-white transition-all duration-300"
+                ></button>
+                <button
+                  data-slide="4"
+                  aria-label="Slide 5"
+                  class="h-[10px] w-[10px] shrink-0 rounded-full border border-black bg-white transition-all duration-300"
+                ></button>
+                <button
+                  data-slide="5"
+                  aria-label="Slide 6"
+                  class="h-[10px] w-[10px] shrink-0 rounded-full border border-black bg-white transition-all duration-300"
+                ></button>
+                <button
+                  data-slide="6"
+                  aria-label="Slide 7"
+                  class="h-[10px] w-[10px] shrink-0 rounded-full border border-black bg-white transition-all duration-300"
+                ></button>
+                <button
+                  data-slide="7"
+                  aria-label="Slide 8"
+                  class="h-[10px] w-[10px] shrink-0 rounded-full border border-black bg-white transition-all duration-300"
+                ></button>
+                <button
+                  data-slide="8"
+                  aria-label="Slide 9"
+                  class="h-[10px] w-[10px] shrink-0 rounded-full border border-black bg-white transition-all duration-300"
+                ></button>
+                <button
+                  data-slide="9"
+                  aria-label="Slide 10"
+                  class="h-[10px] w-[10px] shrink-0 rounded-full border   border-black bg-black/50 transition-all duration-300"
+                ></button>
+              </div>
+            </div>
+          </div>
+          <!-- main 1 right end -->
+          <!-- main 1 left start -->
+          <div class=" flex justify-end col-span-1  ">
+            <img src="./src/assets/image/imgi_23_1793448219.jpg" class="w-[391px] h-[396.87px] rounded-2xl  object-cover cursor-pointer" alt="">
+          </div>
+          <!-- main 1 left end -->
+        </div>
+        <!-- main line 1 end -->
+        <!-- main line 3 start -->
+         <div class="flex justify-between gap-4 mt-10">
+          <div class="flex flex-col gap-2 items-center cursor-pointer">
+            <img src="./src/assets/image/imgi_48_1793518110.png" class="bg-white100 p-[2.5px] object-cover rounded-md" alt="">
+            <span class="font-banimode text-xs ">لباس مردانه</span>
+          </div>
+          <div class="flex flex-col gap-2 items-center cursor-pointer">
+            <img src="./src/assets/image/imgi_49_1793518119.png" class="bg-white100 p-[2.5px] object-cover rounded-md" alt="">
+            <span class="font-banimode text-xs ">لباس زنانه</span>
+          </div>
+          <div class="flex flex-col gap-2 items-center cursor-pointer">
+            <img src="./src/assets/image/imgi_50_1793518127.png" class="bg-white100 p-[2.5px] object-cover rounded-md" alt="">
+            <span class="font-banimode text-xs ">محصولات بچه گانه</span>
+          </div>
+          <div class="flex flex-col gap-2 items-center cursor-pointer">
+            <img src="./src/assets/image/imgi_51_1793518135.png" class="bg-white100 p-[2.5px] object-cover rounded-md" alt="">
+            <span class="font-banimode text-xs ">کیف و کفش</span>
+          </div>
+          <div class="flex flex-col gap-2 items-center cursor-pointer">
+            <img src="./src/assets/image/imgi_52_1793518143.png" class="bg-white100 p-[2.5px] object-cover rounded-md" alt="">
+            <span class="font-banimode text-xs ">ورزش و سفر</span>
+          </div>
+          <div class="flex flex-col gap-2 items-center cursor-pointer">
+            <img src="./src/assets/image/imgi_53_1793518151.png" class="bg-white100 p-[2.5px] object-cover rounded-md" alt="">
+            <span class="font-banimode text-xs ">لوازم خانه</span>
+          </div>
+          <div class="flex flex-col gap-2 items-center cursor-pointer">
+            <img src="./src/assets/image/imgi_54_1793518159.png" class="bg-white100 p-[2.5px] object-cover rounded-md" alt="">
+            <span class="font-banimode text-xs ">آرایشی و بهداشتی</span>
+          </div>
+          <div class="flex flex-col gap-2 items-center cursor-pointer">
+            <img src="./src/assets/image/imgi_55_1793518166.png" class="bg-white100 p-[2.5px] object-cover rounded-md" alt="">
+            <span class="font-banimode text-xs ">ساعت مردانه و زنانه</span>
+          </div>
+         </div>
+        <!-- main line 3 end -->
+      </main>
+      <!-- main end -->
       <!-- start footer -->
       <footer class="pt-10">
         <!-- footer top start -->
-        <div class="px-4 flex justify-between">
-          <!-- footer right start -->
-          <div class="flex">
+        <div class="px-4">
+          <div class="flex justify-between">
             <ul class="font-banimode">
-              <li class="w-52 mb-4">
+              <li class="mb-4">
                 <span class="text-base text-gray600">خرید از بانی مد</span>
               </li>
-              <li class="w-52 h-9 pb-2">
+              <li class="h-9 pb-2">
                 <span class="text-xs cursor-pointer">لباس مردانه</span>
               </li>
-              <li class="w-52 h-9 pb-2">
+              <li class="h-9 pb-2">
                 <span class="text-xs cursor-pointer">لباس زنانه</span>
               </li>
-              <li class="w-52 h-9 pb-2">
+              <li class="h-9 pb-2">
                 <span class="text-xs cursor-pointer">کفش مردانه</span>
               </li>
-              <li class="w-52 h-9 pb-2">
+              <li class="h-9 pb-2">
                 <span class="text-xs cursor-pointer">کفش زنانه</span>
               </li>
-              <li class="w-52 h-9 pb-2">
+              <li class="h-9 pb-2">
                 <span class="text-xs cursor-pointer">کیف زنانه</span>
               </li>
-              <li class="w-52 h-9 pb-2">
+              <li class="h-9 pb-2">
                 <span class="text-xs cursor-pointer">کیف مردانه</span>
               </li>
-              <li class="w-52 h-9 pb-2">
+              <li class="h-9 pb-2">
                 <span class="text-xs cursor-pointer">لباس بچه گانه</span>
               </li>
-              <li class="w-52 h-9 pb-2">
+              <li class="h-9 pb-2">
                 <span class="text-xs cursor-pointer">اکسسوری مردانه</span>
               </li>
-              <li class="w-52 h-9 pb-2">
+              <li class="h-9 pb-2">
                 <span class="text-xs cursor-pointer">اکسسوری زنانه</span>
               </li>
-              <li class="w-52 h-9 pb-2">
+              <li class="h-9 pb-2">
                 <span class="text-xs cursor-pointer">ساعت مردانه</span>
               </li>
-              <li class="w-52 h-9 pb-2">
+              <li class="h-9 pb-2">
                 <span class="text-xs cursor-pointer">ساعت زنانه</span>
               </li>
-              <li class="w-52 h-9 pb-2">
+              <li class="h-9 pb-2">
                 <span class="text-xs cursor-pointer">زیور آلات</span>
               </li>
             </ul>
             <ul class="font-banimode">
-              <li class="w-52 h-6 mb-4">
+              <li class="h-6 mb-4">
                 <span class="text-base text-gray600"></span>
               </li>
-              <li class="w-52 h-9 pb-2">
+              <li class="h-9 pb-2">
                 <span class="text-xs cursor-pointer">لباس ورزشی</span>
               </li>
-              <li class="w-52 h-9 pb-2">
+              <li class="h-9 pb-2">
                 <span class="text-xs cursor-pointer">کفش ورزشی</span>
               </li>
-              <li class="w-52 h-9 pb-2">
+              <li class="h-9 pb-2">
                 <span class="text-xs cursor-pointer">لوازم ورزشی</span>
               </li>
-              <li class="w-52 h-9 pb-2">
+              <li class="h-9 pb-2">
                 <span class="text-xs cursor-pointer">لوازم خانه</span>
               </li>
-              <li class="w-52 h-9 pb-2">
+              <li class="h-9 pb-2">
                 <span class="text-xs cursor-pointer">لوازم برقی</span>
               </li>
-              <li class="w-52 h-9 pb-2">
+              <li class="h-9 pb-2">
                 <span class="text-xs cursor-pointer">لوازم دکوری</span>
               </li>
-              <li class="w-52 h-9 pb-2">
+              <li class="h-9 pb-2">
                 <span class="text-xs cursor-pointer">عطر و ادکلن</span>
               </li>
-              <li class="w-52 h-9 pb-2">
+              <li class="h-9 pb-2">
                 <span class="text-xs cursor-pointer">لوازم آرایشی</span>
               </li>
-              <li class="w-52 h-9 pb-2">
+              <li class="h-9 pb-2">
                 <span class="text-xs cursor-pointer">پوست و مو</span>
               </li>
-              <li class="w-52 h-9 pb-2">
+              <li class="h-9 pb-2">
                 <span class="text-xs cursor-pointer">اسباب بازی</span>
               </li>
-              <li class="w-52 h-9 pb-2">
+              <li class="h-9 pb-2">
                 <span class="text-xs cursor-pointer">تغذیه و رشد نوزاد</span>
               </li>
-              <li class="w-52 h-9 pb-2">
+              <li class="h-9 pb-2">
                 <span class="text-xs cursor-pointer">لوازم نوزاد</span>
               </li>
             </ul>
             <ul class="font-banimode">
-              <li class="w-52 mb-4">
+              <li class="mb-4">
                 <span class="text-base text-gray600">اطلاعات بانی مد</span>
               </li>
-              <li class="w-52 h-9 pb-2">
+              <li class="h-9 pb-2">
                 <span class="text-xs cursor-pointer">درباره ما</span>
               </li>
-              <li class="w-52 h-9 pb-2">
+              <li class="h-9 pb-2">
                 <span class="text-xs cursor-pointer">قوانین و مقررات</span>
               </li>
-              <li class="w-52 h-9 pb-2">
+              <li class="h-9 pb-2">
                 <span class="text-xs cursor-pointer">تماس با ما</span>
               </li>
-              <li class="w-52 h-9 pb-2">
+              <li class="h-9 pb-2">
                 <span class="text-xs cursor-pointer">فرصت های شغلی</span>
               </li>
-              <li class="w-52 h-9 pb-2">
+              <li class="h-9 pb-2">
                 <span class="text-xs cursor-pointer">همکاری تجاری</span>
               </li>
-              <li class="w-52 py-4">
+              <li class="py-4">
                 <span class="text-base text-gray600">خدمات مشتریان</span>
               </li>
-              <li class="w-52 h-9 pb-2">
+              <li class="h-9 pb-2">
                 <span class="text-xs cursor-pointer">خدمات مشتریان</span>
               </li>
-              <li class="w-52 h-9 pb-2">
+              <li class="h-9 pb-2">
                 <span class="text-xs cursor-pointer">شرایط بازگشت</span>
               </li>
-              <li class="w-52 h-9 pb-2">
+              <li class="h-9 pb-2">
                 <span class="text-xs cursor-pointer">راهنمای خرید</span>
               </li>
-              <li class="w-52 h-9 pb-2">
+              <li class="h-9 pb-2">
                 <span class="text-xs cursor-pointer">فروش B2B</span>
               </li>
             </ul>
             <ul class="font-banimode">
-              <li class="w-52 h-7 mb-1">
+              <li class="h-7 mb-1">
                 <span class="text-base text-gray900"
                   >منتظر شنیدن صدای گرمتیم</span
                 >
               </li>
-              <li class="w-52 h-10">
+              <li class="h-10">
                 <span class="text-xs cursor-pointer text-gray900"
                   >7 روز هفته - 24 ساعته</span
                 >
               </li>
-              <li class="w-52 h-9 pb-3 flex gap-2">
+              <li class="h-9 pb-3 flex gap-2">
                 <span class="text-gray900">تلفن:</span>
                 <span class="text-base cursor-pointer">021-49215</span>
               </li>
-              <li class="w-52 h-9 pb-3 flex gap-2">
+              <li class="h-9 pb-3 flex gap-2">
                 <span class="text-gray900">پیامک:</span>
                 <span class="text-base cursor-pointer">10001654</span>
               </li>
-              <li class="w-52 h-9 pb-3 flex gap-2">
+              <li class="h-9 pb-3 flex gap-2">
                 <span class="text-gray900 text-sm">ایمیل:</span>
                 <span class="text-sm cursor-pointer"
                   >customer@banimode.com</span
                 >
               </li>
             </ul>
-          </div>
-          <!-- footer right end -->
-          <!-- footer left start -->
-          <div class="flex flex-col items-end">
+            <div class="flex flex-col items-end">
             <div class="">
               <svg
                 width="220"
@@ -1256,12 +1440,12 @@
               </svg>
             </div>
           </div>
-          <!-- footer left end -->
+          </div>
         </div>
         <!-- footer top end -->
-         <div class="px-4">
-          <hr class=" mt-10 mb-8 bg-gray50" />
-         </div>
+        <div class="px-4">
+          <hr class="mt-10 mb-8 bg-gray50" />
+        </div>
         <!-- footer bottom start -->
         <div class="">
           <div class="px-4">
@@ -1274,117 +1458,171 @@
               به مرکز خرید آنلاین بانی‌مد خوش آمدید؛ مقصد کامل خرید اینترنتی در
               مد و پوشاک و همراه همیشگی لایف استایل شما. اینجا خرید آنلاین لباس،
               کیف و کفش، اکسسوری و حتی محصولات بهداشتی به تجربه‌ای سریع،
-            </p>          
+            </p>
           </div>
           <div id="moreText" class="px-4 hidden">
             <p class="text-sm text-gray300 leading-8 font-banimode">
-               لذت‌بخش و مطمئن تبدیل می‌شود. اگر دنبال تنوع واقعی و محتوای راهنمای
-      کاربردی هستید، همین‌جا هر روز می‌توانید استایل و سبک و زندگی خودتان را تازه‌تر کنید. مرکز
-      خرید آنلاین بانی‌مد از پوشاک زنانه و مردانه تا آیتم‌های بچگانه و نوجوان، از کالکشن‌های
-      چهار فصل تا آیتم‌های ترند و پرفروش را یک‌جا گرد آورده تا انتخاب برای شما ساده و نتیجه
-      دقیقاً مطابق سلیقه و نیازتان باشد.
-    
+              لذت‌بخش و مطمئن تبدیل می‌شود. اگر دنبال تنوع واقعی و محتوای
+              راهنمای کاربردی هستید، همین‌جا هر روز می‌توانید استایل و سبک و
+              زندگی خودتان را تازه‌تر کنید. مرکز خرید آنلاین بانی‌مد از پوشاک
+              زنانه و مردانه تا آیتم‌های بچگانه و نوجوان، از کالکشن‌های چهار فصل
+              تا آیتم‌های ترند و پرفروش را یک‌جا گرد آورده تا انتخاب برای شما
+              ساده و نتیجه دقیقاً مطابق سلیقه و نیازتان باشد.
             </p>
-            <h3 class="my-3 text-sm font-banimode">چرا خرید از مرکز خرید آنلاین بانی‌مد؟</h3>
+            <h3 class="my-3 text-sm font-banimode">
+              چرا خرید از مرکز خرید آنلاین بانی‌مد؟
+            </h3>
             <p class="text-sm text-gray300 leading-8 font-banimode">
-              
-      بزرگترین پلتفرم فروش آنلاین بانی‌مد با تمرکز بر تجربه کاربری، مسیر خرید مد و پوشاک را
-      کوتاه و شفاف کرده است؛ جست‌وجوی هوشمند، فیلترهای حرفه‌ای (سایز، رنگ، جنس، کاربرد)، تصاویر
-      دقیق و توضیحات کامل محصول کمک می‌کنند بدون سردرگمی به انتخاب برسید. ما کیفیت و اصالت کالا
-      را جدی می‌گیریم و تلاش می‌کنیم موجودی به‌روز، قیمت عادلانه و فرآیند ارسال منظم را حفظ
-      کنیم. علاوه بر این، با بخش محتوایی تخصصی در حوزه لایف استایل و سبک و زندگی، راهنمای سایز و
-      نکات استایل، قبل از هر خرید دید واضح‌تری نسبت به تناسب، کاربری و ترکیب‌پذیری هر آیتم پیدا
-      می‌کنید.
-    
+              بزرگترین پلتفرم فروش آنلاین بانی‌مد با تمرکز بر تجربه کاربری، مسیر
+              خرید مد و پوشاک را کوتاه و شفاف کرده است؛ جست‌وجوی هوشمند،
+              فیلترهای حرفه‌ای (سایز، رنگ، جنس، کاربرد)، تصاویر دقیق و توضیحات
+              کامل محصول کمک می‌کنند بدون سردرگمی به انتخاب برسید. ما کیفیت و
+              اصالت کالا را جدی می‌گیریم و تلاش می‌کنیم موجودی به‌روز، قیمت
+              عادلانه و فرآیند ارسال منظم را حفظ کنیم. علاوه بر این، با بخش
+              محتوایی تخصصی در حوزه لایف استایل و سبک و زندگی، راهنمای سایز و
+              نکات استایل، قبل از هر خرید دید واضح‌تری نسبت به تناسب، کاربری و
+              ترکیب‌پذیری هر آیتم پیدا می‌کنید.
             </p>
-            <h3 class="my-3 text-sm font-banimode">خدمات و تضمین‌ها (برای خریدی آسوده‌تر)</h3>
+            <h3 class="my-3 text-sm font-banimode">
+              خدمات و تضمین‌ها (برای خریدی آسوده‌تر)
+            </h3>
             <ul>
-              <li class="text-sm text-gray300 leading-8 font-banimode">تحویل سریع در سراسر کشور</li>
-              <li class="text-sm text-gray300 leading-8 font-banimode">تعویض هم‌زمان (فرآیند ساده و بدون معطلی پس از دریافت)</li>
-              <li class="text-sm text-gray300 leading-8 font-banimode">ضمانت اصالت کالا برای همه محصولات</li>
-              <li class="text-sm text-gray300 leading-8 font-banimode">سرویس برگشت پول مطابق شرایط مرجوعی</li>
-              <li class="text-sm text-gray300 leading-8 font-banimode">پشتیبانی ۲۴ ساعته از طریق کانال‌های ارتباطی</li>
-              <li class="text-sm text-gray300 leading-8 font-banimode">خدمات پس از فروش برای پیگیری کامل سفارش‌ها و رضایت شما</li>
+              <li class="text-sm text-gray300 leading-8 font-banimode">
+                تحویل سریع در سراسر کشور
+              </li>
+              <li class="text-sm text-gray300 leading-8 font-banimode">
+                تعویض هم‌زمان (فرآیند ساده و بدون معطلی پس از دریافت)
+              </li>
+              <li class="text-sm text-gray300 leading-8 font-banimode">
+                ضمانت اصالت کالا برای همه محصولات
+              </li>
+              <li class="text-sm text-gray300 leading-8 font-banimode">
+                سرویس برگشت پول مطابق شرایط مرجوعی
+              </li>
+              <li class="text-sm text-gray300 leading-8 font-banimode">
+                پشتیبانی ۲۴ ساعته از طریق کانال‌های ارتباطی
+              </li>
+              <li class="text-sm text-gray300 leading-8 font-banimode">
+                خدمات پس از فروش برای پیگیری کامل سفارش‌ها و رضایت شما
+              </li>
             </ul>
-            <h3 class="my-3 text-sm font-banimode">خرید لباس زنانه: از روزمره تا مجلسی</h3>
+            <h3 class="my-3 text-sm font-banimode">
+              خرید لباس زنانه: از روزمره تا مجلسی
+            </h3>
             <p class="text-sm text-gray300 leading-8 font-banimode">
-              در بخش زنانه مرکز خرید آنلاین بانی‌مد هر آنچه برای استایل روزمره، محل کار یا مهمانی لازم
-       دارید فراهم است: مانتو و رویه، شومیز و بلوز، تیشرت و تاپ، <a href="#" class="text-green400 no-underline font-banimode">شلوار جین زنانه</a>، کتان، اسلش و جاگر، سارافون و دامن، سویشرت و هودی، پالتو و <a href="#" class="text-green400 no-underline font-banimode">کاپشن زنانه</a>. اگر به‌دنبال استایل نیمه‌رسمی یا مجلسی هستید، ست‌های کت‌وشلوار زنانه، لباس شب، کفش
-        پاشنه‌دار و اکسسوری‌های هماهنگ (کیف، کمربند، زیورآلات مینیمال) به‌راحتی قابل ست‌کردن‌اند.
-        برای تکمیل لایف استایل زنانه، شال و روسری در طرح‌ها و جنس‌های متنوع و همین‌طور کیف‌های ترند
-        تا کلاسیک، دست شما را برای انتخاب باز می‌گذارند.
+              در بخش زنانه مرکز خرید آنلاین بانی‌مد هر آنچه برای استایل روزمره،
+              محل کار یا مهمانی لازم دارید فراهم است: مانتو و رویه، شومیز و
+              بلوز، تیشرت و تاپ،
+              <a href="#" class="text-green400 no-underline font-banimode"
+                >شلوار جین زنانه</a
+              >، کتان، اسلش و جاگر، سارافون و دامن، سویشرت و هودی، پالتو و
+              <a href="#" class="text-green400 no-underline font-banimode"
+                >کاپشن زنانه</a
+              >. اگر به‌دنبال استایل نیمه‌رسمی یا مجلسی هستید، ست‌های کت‌وشلوار
+              زنانه، لباس شب، کفش پاشنه‌دار و اکسسوری‌های هماهنگ (کیف، کمربند،
+              زیورآلات مینیمال) به‌راحتی قابل ست‌کردن‌اند. برای تکمیل لایف
+              استایل زنانه، شال و روسری در طرح‌ها و جنس‌های متنوع و همین‌طور
+              کیف‌های ترند تا کلاسیک، دست شما را برای انتخاب باز می‌گذارند.
             </p>
-            <h3 class="my-3 text-sm font-banimode">خرید لباس مردانه: اسمارت‌کژوال تا رسمی</h3>
+            <h3 class="my-3 text-sm font-banimode">
+              خرید لباس مردانه: اسمارت‌کژوال تا رسمی
+            </h3>
             <p class="text-sm text-gray300 leading-8 font-banimode">
-              بخش مردانه مرکز خرید آنلاین بانی‌مد طیفی کامل از مد و پوشاک را ارائه می‌کند: <a href="#" class="text-green400 no-underline font-banimode">تیشرت مردانه</a> و پولوشرت، پیراهن (روزمره تا رسمی)، <a href="#" class="text-green400 no-underline font-banimode">شلوار جین مردانه</a>، شلوار پارچه‌ای، کت تک، <a href="#" class="text-green400 no-underline font-banimode">سویشرت مردانه</a>
-        و هودی، اورکت و کاپشن. برای موقعیت‌های شغلی یا مراسم رسمی، انتخاب پیراهن و کت‌وشلوار با
-        راهنمای فیت و سایز دقیق ساده‌تر است. در کنار آن، کفش‌های روزمره، کتانی، بوت و لوفر، به‌همراه
-        کمربند، کلاه و عینک، استایل شما را کامل می‌کنند. اگر دانشجو یا کاربر فعال شهری هستید،
-        کوله‌پشتی‌های مدرسه و لپ‌تاپ با طراحی ارگونومیک و محفظه‌بندی کاربردی، انتخاب‌های محبوب شما
-        خواهند بود؛ هماهنگ با سبک و زندگی پویا.
-      
+              بخش مردانه مرکز خرید آنلاین بانی‌مد طیفی کامل از مد و پوشاک را
+              ارائه می‌کند:
+              <a href="#" class="text-green400 no-underline font-banimode"
+                >تیشرت مردانه</a
+              >
+              و پولوشرت، پیراهن (روزمره تا رسمی)،
+              <a href="#" class="text-green400 no-underline font-banimode"
+                >شلوار جین مردانه</a
+              >، شلوار پارچه‌ای، کت تک،
+              <a href="#" class="text-green400 no-underline font-banimode"
+                >سویشرت مردانه</a
+              >
+              و هودی، اورکت و کاپشن. برای موقعیت‌های شغلی یا مراسم رسمی، انتخاب
+              پیراهن و کت‌وشلوار با راهنمای فیت و سایز دقیق ساده‌تر است. در کنار
+              آن، کفش‌های روزمره، کتانی، بوت و لوفر، به‌همراه کمربند، کلاه و
+              عینک، استایل شما را کامل می‌کنند. اگر دانشجو یا کاربر فعال شهری
+              هستید، کوله‌پشتی‌های مدرسه و لپ‌تاپ با طراحی ارگونومیک و
+              محفظه‌بندی کاربردی، انتخاب‌های محبوب شما خواهند بود؛ هماهنگ با سبک
+              و زندگی پویا.
             </p>
-            <h3 class="my-3 text-sm font-banimode">بچگانه و نوجوان: راحت، مقاوم و دوست‌داشتنی</h3>
+            <h3 class="my-3 text-sm font-banimode">
+              بچگانه و نوجوان: راحت، مقاوم و دوست‌داشتنی
+            </h3>
             <p class="text-sm text-gray300 leading-8 font-banimode">
-              
-      برای پوشاک دخترانه و پسرانه، از نوزاد تا نوجوان، مرکز خرید آنلاین بانی‌مد روی دو معیار کلیدی
-      تمرکز کرده است: راحتی و دوام. ست‌های مدرسه، تیشرت و شلوارهای نرم و ضدحساسیت، سویشرت و
-      هودی‌های گرم و سبک، کفش‌های مدرسه و کتانی‌های مقاوم، و البته کوله‌پشتی‌های رنگی و کاربردی،
-      خرید را برای والدین آسان و برای بچه‌ها هیجان‌انگیز می‌کند. راهنمای سایز تخصصی هم کمک
-      می‌کند تا انتخاب شما دقیق و اقتصادی باشد—همسو با اصول لایف استایل خانواده‌محور.  
+              برای پوشاک دخترانه و پسرانه، از نوزاد تا نوجوان، مرکز خرید آنلاین
+              بانی‌مد روی دو معیار کلیدی تمرکز کرده است: راحتی و دوام. ست‌های
+              مدرسه، تیشرت و شلوارهای نرم و ضدحساسیت، سویشرت و هودی‌های گرم و
+              سبک، کفش‌های مدرسه و کتانی‌های مقاوم، و البته کوله‌پشتی‌های رنگی و
+              کاربردی، خرید را برای والدین آسان و برای بچه‌ها هیجان‌انگیز
+              می‌کند. راهنمای سایز تخصصی هم کمک می‌کند تا انتخاب شما دقیق و
+              اقتصادی باشد—همسو با اصول لایف استایل خانواده‌محور.
             </p>
-            <h3 class="my-3 text-sm font-banimode">کیف، کفش و اکسسوری: امضای استایل شما</h3>
+            <h3 class="my-3 text-sm font-banimode">
+              کیف، کفش و اکسسوری: امضای استایل شما
+            </h3>
             <p class="text-sm text-gray300 leading-8 font-banimode">
-              
-      گاهی یک کیف دوشی خوش‌فرم، یک کمربند چرمی مینیمال یا عینک آفتابی استاندارد، استایل را از
-      «خوب» به «به‌یادماندنی» ارتقا می‌دهد. در مرکز خرید آنلاین بانی‌مد مجموعه‌ای به‌روز از کیف‌
-      زنانه و مردانه، کوله‌پشتی، کفش‌های روزمره و مجلسی، صندل و نیم‌بوت، به‌همراه اکسسوری‌های
-      ضروری گردآوری شده تا بتوانید در کمترین زمان، یک ست کامل و هماهنگ بسازید—متناسب با سبک و
-      زندگی شما.
-    
+              گاهی یک کیف دوشی خوش‌فرم، یک کمربند چرمی مینیمال یا عینک آفتابی
+              استاندارد، استایل را از «خوب» به «به‌یادماندنی» ارتقا می‌دهد. در
+              مرکز خرید آنلاین بانی‌مد مجموعه‌ای به‌روز از کیف‌ زنانه و مردانه،
+              کوله‌پشتی، کفش‌های روزمره و مجلسی، صندل و نیم‌بوت، به‌همراه
+              اکسسوری‌های ضروری گردآوری شده تا بتوانید در کمترین زمان، یک ست
+              کامل و هماهنگ بسازید—متناسب با سبک و زندگی شما.
             </p>
-            <h3 class="my-3 text-sm font-banimode">محصولات بهداشتی و مراقبت شخصی</h3>
+            <h3 class="my-3 text-sm font-banimode">
+              محصولات بهداشتی و مراقبت شخصی
+            </h3>
             <p class="text-sm text-gray300 leading-8 font-banimode">
-              
-      علاوه بر مد و پوشاک, بخشی از نیازهای روزمره شما در دسته محصولات بهداشتی نیز پوشش داده
-      می‌شود؛ از بهداشت دهان و دندان و دستمال کاغذی تا شوینده‌های بهداشتی و اقلام مراقبت شخصی.
-      هدف ما این است که بخشی از خریدهای روتین خانه را هم در کنار خرید لباس، یک‌جا و ساده انجام
-      دهید؛ در مرکز خرید آنلاین بانی‌مد.
-    
+              علاوه بر مد و پوشاک, بخشی از نیازهای روزمره شما در دسته محصولات
+              بهداشتی نیز پوشش داده می‌شود؛ از بهداشت دهان و دندان و دستمال
+              کاغذی تا شوینده‌های بهداشتی و اقلام مراقبت شخصی. هدف ما این است که
+              بخشی از خریدهای روتین خانه را هم در کنار خرید لباس، یک‌جا و ساده
+              انجام دهید؛ در مرکز خرید آنلاین بانی‌مد.
             </p>
-            <h3 class="my-3 text-sm font-banimode">محتوای تخصصی و راهنمای خرید (لایف استایل و سبک و زندگی)</h3>
+            <h3 class="my-3 text-sm font-banimode">
+              محتوای تخصصی و راهنمای خرید (لایف استایل و سبک و زندگی)
+            </h3>
             <p class="text-sm text-gray300 leading-8 font-banimode">
-              
-      اگر به‌دنبال الهام و یادگیری اصول استایل کردن هستید، محتوای آموزشی مرکز خرید آنلاین
-      بانی‌مد درباره ترندهای فصل، اسمارت‌کژوال، انتخاب شلوار مناسب اندام، راهنمای کفش راحتی محل
-      کار، یا ست‌کردن کاپشن و کت تک، به شما کمک می‌کند تصمیمی آگاهانه بگیرید. این راهنماها کوتاه
-      و عملی نوشته شده‌اند تا فوراً بتوانید نکات را در لایف استایل روزانه‌تان به کار بگیرید.
-    
+              اگر به‌دنبال الهام و یادگیری اصول استایل کردن هستید، محتوای آموزشی
+              مرکز خرید آنلاین بانی‌مد درباره ترندهای فصل، اسمارت‌کژوال، انتخاب
+              شلوار مناسب اندام، راهنمای کفش راحتی محل کار، یا ست‌کردن کاپشن و
+              کت تک، به شما کمک می‌کند تصمیمی آگاهانه بگیرید. این راهنماها کوتاه
+              و عملی نوشته شده‌اند تا فوراً بتوانید نکات را در لایف استایل
+              روزانه‌تان به کار بگیرید.
             </p>
             <h3 class="my-3 text-sm font-banimode">تجربه خرید آسان و شفاف</h3>
             <p class="text-sm text-gray300 leading-8 font-banimode">
-      فرآیند خرید در مرکز خرید آنلاین بانی‌مد ساده است: جست‌وجو و فیلتر، بررسی مشخصات و تصاویر،
-      افزودن به سبد، انتخاب روش ارسال و پرداخت امن. امکان پیگیری سفارش، نوتیفیکیشن‌های وضعیت
-      ارسال و پشتیبانی ۲۴ ساعته باعث می‌شود در هر مرحله دغدغه‌ای نداشته باشید. با تحویل سریع،
-      تعویض هم‌زمان، سرویس برگشت پول و خدمات پس از فروش، خیالتان از خرید راحت است. ما تلاش
-      می‌کنیم محصولات پرطرفدار و سایزهای محبوب را مداوم به‌روزرسانی کنیم تا انتخاب‌های شما همیشه
-      تازه بماند—در تراز بزرگترین پلتفرم فروش انلاین حوزه مد و پوشاک.
+              فرآیند خرید در مرکز خرید آنلاین بانی‌مد ساده است: جست‌وجو و فیلتر،
+              بررسی مشخصات و تصاویر، افزودن به سبد، انتخاب روش ارسال و پرداخت
+              امن. امکان پیگیری سفارش، نوتیفیکیشن‌های وضعیت ارسال و پشتیبانی ۲۴
+              ساعته باعث می‌شود در هر مرحله دغدغه‌ای نداشته باشید. با تحویل
+              سریع، تعویض هم‌زمان، سرویس برگشت پول و خدمات پس از فروش، خیالتان
+              از خرید راحت است. ما تلاش می‌کنیم محصولات پرطرفدار و سایزهای محبوب
+              را مداوم به‌روزرسانی کنیم تا انتخاب‌های شما همیشه تازه بماند—در
+              تراز بزرگترین پلتفرم فروش انلاین حوزه مد و پوشاک.
             </p>
-            <h3 class="my-3 text-sm font-banimode">درباره مرکز خرید آنلاین بانی‌مد</h3>
+            <h3 class="my-3 text-sm font-banimode">
+              درباره مرکز خرید آنلاین بانی‌مد
+            </h3>
             <p class="text-sm text-gray300 leading-8 font-banimode">
-      مرکز خرید آنلاین بانی‌مد فعالیت خود را از سال ۱۳۹۳ با همکاری با برند جین وست آغاز نموده
-      است. امروز این مرکز خرید آنلاین با همکاری با بیش از ۱۴۰۰ برند با اصالت در حوزه مد و فشن در
-      حال فعالیت است تا تجربه خریدی گسترده، به‌روز و قابل‌اعتماد را برای شما فراهم کند.
+              مرکز خرید آنلاین بانی‌مد فعالیت خود را از سال ۱۳۹۳ با همکاری با
+              برند جین وست آغاز نموده است. امروز این مرکز خرید آنلاین با همکاری
+              با بیش از ۱۴۰۰ برند با اصالت در حوزه مد و فشن در حال فعالیت است تا
+              تجربه خریدی گسترده، به‌روز و قابل‌اعتماد را برای شما فراهم کند.
             </p>
-            <h3 class="my-3 text-sm font-banimode">وقتشه استایلتو به‌روز کنی!</h3>
+            <h3 class="my-3 text-sm font-banimode">
+              وقتشه استایلتو به‌روز کنی!
+            </h3>
             <p class="text-sm text-gray300 leading-8 font-banimode">
-              
-      چه به‌دنبال «خرید لباس زنانه»، «خرید لباس مردانه»، «پوشاک نوجوان»، «کفش و کیف»، «شال و
-      روسری»، «کوله‌پشتی مدرسه و لپ‌تاپ» یا «محصولات بهداشتی» باشید، مرکز خرید آنلاین بانی‌مد
-      مقصدی کامل برای خرید آنلاین است. کالکشن‌های فصل را ببینید، با فیلترها انتخاب را دقیق کنید
-      و با چند کلیک ساده، استایل دلخواه‌تان را بسازید. مرکز خرید آنلاین بانی‌مد کنار شماست تا هر
-      روز بهترین نسخه از لایف استایل و سبک و زندگی خودتان را زندگی کنید.
-    
+              چه به‌دنبال «خرید لباس زنانه»، «خرید لباس مردانه»، «پوشاک نوجوان»،
+              «کفش و کیف»، «شال و روسری»، «کوله‌پشتی مدرسه و لپ‌تاپ» یا «محصولات
+              بهداشتی» باشید، مرکز خرید آنلاین بانی‌مد مقصدی کامل برای خرید
+              آنلاین است. کالکشن‌های فصل را ببینید، با فیلترها انتخاب را دقیق
+              کنید و با چند کلیک ساده، استایل دلخواه‌تان را بسازید. مرکز خرید
+              آنلاین بانی‌مد کنار شماست تا هر روز بهترین نسخه از لایف استایل و
+              سبک و زندگی خودتان را زندگی کنید.
             </p>
           </div>
           <div class="mt-2 px-4">
@@ -1393,13 +1631,31 @@
             >
           </div>
           <div class="flex items-center justify-center gap-3 my-10">
-            <img src="./src/assets/image/samandehi.webp" class="w-[74px] h-[75.17px] object-fit-cover cursor-pointer" alt="logo">
-            <img src="./src/assets/image/itehad-logo.webp" class="w-[74px] h-[75.17px] object-fit-cover cursor-pointer" alt="">
-            <img src="./src/assets/image/eanjoman.webp" class="w-[74px] h-[75.17px] object-fit-cover cursor-pointer" alt="">
-            <img src="./src/assets/image/enamad.webp" class="w-[74px] h-[75.17px] object-fit-cover cursor-pointer" alt="">
+            <img
+              src="./src/assets/image/samandehi.webp"
+              class="w-[74px] h-[75.17px] object-fit-cover cursor-pointer"
+              alt="logo"
+            />
+            <img
+              src="./src/assets/image/itehad-logo.webp"
+              class="w-[74px] h-[75.17px] object-fit-cover cursor-pointer"
+              alt=""
+            />
+            <img
+              src="./src/assets/image/eanjoman.webp"
+              class="w-[74px] h-[75.17px] object-fit-cover cursor-pointer"
+              alt=""
+            />
+            <img
+              src="./src/assets/image/enamad.webp"
+              class="w-[74px] h-[75.17px] object-fit-cover cursor-pointer"
+              alt=""
+            />
           </div>
           <div class="h-[52px] bg-gray75 flex items-center p-4">
-            <span class="font-banimode text-sm text-gray300">© کلیه حقوق این وب سایت متعلق به بانی مد است.</span>
+            <span class="font-banimode text-sm text-gray300"
+              >© کلیه حقوق این وب سایت متعلق به بانی مد است.</span
+            >
           </div>
         </div>
         <!-- footer bottom end -->
