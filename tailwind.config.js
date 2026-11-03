@@ -18,6 +18,7 @@ export default {
         gray900: "#53565A",
         green300: "#00BF6F",
         green400: "#19B16A",
+        green500:"#229F5E",
       },
     },
   },
