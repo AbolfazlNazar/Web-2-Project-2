@@ -15,6 +15,9 @@
     @apply relative
                 after:content-[''] after:w-full after:h-0.5 after:bg-green300 after:absolute after:-bottom-2 after:right-0 after:scale-x-0 group-hover:after:scale-x-100 after:transition-transform duration-300 after:origin-center font-banimode text-sm
   } 
+  .swiper-button-disabled {
+    @apply hidden cursor-not-allowed pointer-events-none
+  }
 }
 @layer utilities{
   .cscroll::-webkit-scrollbar{
