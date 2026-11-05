@@ -21,6 +21,7 @@ export default {
         green500:"#229F5E",
         red300:"#FD1E16",
         orange300:"#F06425",
+        black400:"#2E2E2E",
       },
     },
   },
