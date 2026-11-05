@@ -1530,12 +1530,16 @@ html {
   inset: 0px;
 }
 
-.\!left-1 {
-  left: 0.25rem !important;
+.\!left-9 {
+  left: 2.25rem !important;
 }
 
-.\!top-24 {
-  top: 6rem !important;
+.\!right-9 {
+  right: 2.25rem !important;
+}
+
+.\!top-\[787px\] {
+  top: 787px !important;
 }
 
 .bottom-3 {
@@ -1550,10 +1554,6 @@ html {
   left: 1rem;
 }
 
-.left-5 {
-  left: 1.25rem;
-}
-
 .left-60 {
   left: 15rem;
 }
@@ -1566,6 +1566,10 @@ html {
   right: 0.25rem;
 }
 
+.top-4 {
+  top: 1rem;
+}
+
 .top-5 {
   top: 1.25rem;
 }
@@ -1574,48 +1578,8 @@ html {
   top: 100%;
 }
 
-.\!top-2 {
-  top: 0.5rem !important;
-}
-
-.right-52 {
-  right: 13rem;
-}
-
-.\!right-52 {
-  right: 13rem !important;
-}
-
-.\!left-52 {
-  left: 13rem !important;
-}
-
-.\!left-5 {
-  left: 1.25rem !important;
-}
-
-.\!-left-5 {
-  left: -1.25rem !important;
-}
-
-.\!-right-5 {
-  right: -1.25rem !important;
-}
-
 .z-30 {
   z-index: 30;
-}
-
-.z-20 {
-  z-index: 20;
-}
-
-.z-50 {
-  z-index: 50;
-}
-
-.\!z-50 {
-  z-index: 50 !important;
 }
 
 .col-span-1 {
@@ -1624,6 +1588,10 @@ html {
 
 .col-span-2 {
   grid-column: span 2 / span 2;
+}
+
+.col-end-1 {
+  grid-column-end: 1;
 }
 
 .m-auto {
@@ -1681,8 +1649,16 @@ html {
   margin-top: 1.5rem;
 }
 
+.mt-7 {
+  margin-top: 1.75rem;
+}
+
 .mt-8 {
   margin-top: 2rem;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
 }
 
 .line-clamp-1 {
@@ -1708,6 +1684,10 @@ html {
   aspect-ratio: 2.5/3;
 }
 
+.aspect-\[2\/3\] {
+  aspect-ratio: 2/3;
+}
+
 .h-10 {
   height: 2.5rem;
 }
@@ -1722,6 +1702,10 @@ html {
 
 .h-24 {
   height: 6rem;
+}
+
+.h-5 {
+  height: 1.25rem;
 }
 
 .h-6 {
@@ -1768,8 +1752,32 @@ html {
   height: 100%;
 }
 
+.max-h-0 {
+  max-height: 0px;
+}
+
+.max-h-\[\] {
+  max-height: ;
+}
+
+.max-h-\[448\.66px\] {
+  max-height: 448.66px;
+}
+
+.max-h-\[448\] {
+  max-height: 448;
+}
+
+.\!max-h-\[448\.66px\] {
+  max-height: 448.66px !important;
+}
+
 .w-14 {
   width: 3.5rem;
+}
+
+.w-5 {
+  width: 1.25rem;
 }
 
 .w-6 {
@@ -1832,6 +1840,22 @@ html {
   width: 1px;
 }
 
+.max-w-\[\] {
+  max-width: ;
+}
+
+.max-w-\[255\.75px\] {
+  max-width: 255.75px;
+}
+
+.max-w-0 {
+  max-width: 0px;
+}
+
+.max-w-\[255\.75\] {
+  max-width: 255.75;
+}
+
 .shrink-0 {
   flex-shrink: 0;
 }
@@ -1859,6 +1883,10 @@ html {
 
 .snap-start {
   scroll-snap-align: start;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .grid-cols-3 {
@@ -1903,6 +1931,10 @@ html {
 
 .gap-2 {
   gap: 0.5rem;
+}
+
+.gap-20 {
+  gap: 5rem;
 }
 
 .gap-3 {
@@ -1961,6 +1993,10 @@ html {
   border-radius: 0.75rem;
 }
 
+.rounded {
+  border-radius: 0.25rem;
+}
+
 .border {
   border-width: 1px;
 }
@@ -1987,6 +2023,11 @@ html {
   border-color: rgb(245 245 247 / var(--tw-border-opacity, 1));
 }
 
+.border-gray300 {
+  --tw-border-opacity: 1;
+  border-color: rgb(128 133 140 / var(--tw-border-opacity, 1));
+}
+
 .border-green400 {
   --tw-border-opacity: 1;
   border-color: rgb(25 177 106 / var(--tw-border-opacity, 1));
@@ -2008,6 +2049,11 @@ html {
 
 .bg-black\/50 {
   background-color: rgb(0 0 0 / 0.5);
+}
+
+.bg-black400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(46 46 46 / var(--tw-bg-opacity, 1));
 }
 
 .bg-gray100 {
@@ -2095,10 +2141,6 @@ html {
   --tw-gradient-to-position: 25%;
 }
 
-.fill-gray300 {
-  fill: #80858C;
-}
-
 .\!fill-gray300 {
   fill: #80858C !important;
 }
@@ -2115,6 +2157,10 @@ html {
 
 .p-2 {
   padding: 0.5rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
 }
 
 .p-4 {
@@ -2214,6 +2260,11 @@ html {
   line-height: 1.5rem;
 }
 
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -2226,6 +2277,10 @@ html {
 
 .font-bold {
   font-weight: 700;
+}
+
+.font-medium {
+  font-weight: 500;
 }
 
 .font-normal {
@@ -2333,8 +2388,17 @@ html {
   border-color: rgb(25 177 106 / var(--tw-border-opacity, 1)) !important;
 }
 
+.hover\:border-gray300:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(128 133 140 / var(--tw-border-opacity, 1));
+}
+
 .hover\:\!bg-transparent:hover {
   background-color: transparent !important;
+}
+
+.hover\:bg-transparent:hover {
+  background-color: transparent;
 }
 
 .hover\:bg-white:hover {
