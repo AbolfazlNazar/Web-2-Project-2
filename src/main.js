@@ -124,3 +124,34 @@ if (carousel) {
   updatePagination(0);
   startAutoplay();
 }
+const items = document.querySelectorAll(".item");
+
+items.forEach((item) => {
+  item.addEventListener("click", () => {
+
+    // حذف استایل از همه دکمه‌ها
+    items.forEach((btn) => {
+      btn.classList.remove("bg-green400");
+      btn.classList.add("bg-white");
+
+      const text = btn.querySelector("span");
+
+      if (text) {
+        text.classList.remove("text-white");
+        text.classList.add("text-black");
+      }
+    });
+
+    // فعال کردن دکمه انتخاب‌شده
+    item.classList.remove("bg-white");
+    item.classList.add("bg-green400");
+
+    const text = item.querySelector("span");
+
+    if (text) {
+      text.classList.remove("text-black");
+      text.classList.add("text-white");
+    }
+
+  });
+});
