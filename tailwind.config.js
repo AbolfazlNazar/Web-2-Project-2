@@ -1,12 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./*.html"],
+  content: ["./**/*.{html,js}"],
   theme: {
     extend: {
       fontFamily: {
         banimode: ["banimode"],
       },
       colors: {
+        white25:"#F0F0F2",
         white100:"#F5F5F7",
         gray50: "#EDEDED",
         gray75:"#FBFBFB",
@@ -22,6 +23,7 @@ export default {
         red300:"#FD1E16",
         orange300:"#F06425",
         black400:"#2E2E2E",
+        purple800:"#562430",
       },
     },
   },
