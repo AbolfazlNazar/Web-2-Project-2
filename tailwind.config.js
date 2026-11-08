@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./**/*.{html,js}"],
+  content: [
+    "./index.html",
+    "./src/**/*.{html,js}",  
+],
   theme: {
     extend: {
       fontFamily: {
@@ -22,6 +25,8 @@ export default {
         green500:"#229F5E",
         red300:"#FD1E16",
         orange300:"#F06425",
+        orange400:"#FFA800",
+        orange800:"#DB7700",
         black400:"#2E2E2E",
         purple800:"#562430",
       },
