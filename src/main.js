@@ -155,3 +155,32 @@ items.forEach((item) => {
 
   });
 });
+
+const swiperConfigs = [
+  ".mySwiper-line-2",
+  ".mySwiper-line-4",
+  ".mySwiper-line-7",
+  ".mySwiper-line-8",
+  ".mySwiper-line-9",
+];
+
+swiperConfigs.forEach((selector) => {
+  const swiperElement = document.querySelector(selector);
+
+  // والد مشترک اسلایدر و دکمه‌های آن
+  const parent = swiperElement.parentElement;
+
+  const nextButton = parent.querySelector(".swiper-button-next");
+  const prevButton = parent.querySelector(".swiper-button-prev");
+
+  new Swiper(swiperElement, {
+    slidesPerView: 5,
+    spaceBetween: 15,
+    loop: false,
+
+    navigation: {
+      nextEl: nextButton,
+      prevEl: prevButton,
+    },
+  });
+});
