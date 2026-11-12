@@ -8,6 +8,7 @@ export default {
     extend: {
       fontFamily: {
         banimode: ["banimode"],
+        banimode2: ["banimode2"],
       },
       colors: {
         white25:"#F0F0F2",
