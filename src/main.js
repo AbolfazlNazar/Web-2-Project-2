@@ -162,6 +162,8 @@ const swiperConfigs = [
   ".mySwiper-line-7",
   ".mySwiper-line-8",
   ".mySwiper-line-9",
+  ".mySwiper-line-10",
+  ".mySwiper-line-11",
 ];
 
 swiperConfigs.forEach((selector) => {
@@ -174,7 +176,7 @@ swiperConfigs.forEach((selector) => {
   const prevButton = parent.querySelector(".swiper-button-prev");
 
   new Swiper(swiperElement, {
-    slidesPerView: 5,
+    slidesPerView: selector === ".mySwiper-line-11" ? 4 : 5,
     spaceBetween: 15,
     loop: false,
 
