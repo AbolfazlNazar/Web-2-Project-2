@@ -6,6 +6,10 @@
     font-family: "banimode";
     src: url(../../../public/a52ed9519e94f900-s.p.woff2) format("woff2");
   }
+  @font-face {
+    font-family: "banimode2";
+    src: url(../../../public/ad97f831c842163a-s.p.woff2) format("woff2");
+  }
 }
 @layer components {
   .menu{
