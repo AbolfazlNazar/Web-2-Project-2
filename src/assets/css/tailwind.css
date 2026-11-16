@@ -17,13 +17,13 @@
   }
   .submenu {
     @apply relative
-                after:content-[''] after:w-full after:h-0.5 after:bg-green300 after:absolute after:-bottom-2 after:right-0 after:scale-x-0 group-hover:after:scale-x-100 after:transition-transform duration-300 after:origin-center font-banimode text-sm
+                after:content-[''] after:w-full after:h-0.5 after:bg-green300 after:absolute after:-bottom-1 after:right-0 after:scale-x-0 group-hover:after:scale-x-100 after:transition-transform duration-300 after:origin-center font-banimode text-sm
   } 
   .swiper-button-disabled {
     @apply hidden cursor-not-allowed pointer-events-none
   }
   .megamenu{
-    @apply w-[1200px] h-[370px] bg-sky-400 z-50 absolute top-full right-0 invisible opacity-0 translate-y-1 transition duration-150 group-hover/menu:visible group-hover/menu:opacity-100 group-hover/menu:translate-y-0 group-focus-within/menu:visible group-focus-within/menu:opacity-100 group-focus-within/menu:translate-y-0 shadow-[0px_-1px_5px] shadow-gray200
+    @apply   h-[370px] rounded-b-lg bg-white z-50 absolute top-full -right-4 invisible opacity-0 translate-y-1 transition duration-150 group-hover/menu:visible group-hover/menu:opacity-100 group-hover/menu:translate-y-0 group-focus-within/menu:visible group-focus-within/menu:opacity-100 group-focus-within/menu:translate-y-0 shadow-[0px_-3px_20px_0px] shadow-gray-100 py-4
   }
 }
 @layer utilities{
