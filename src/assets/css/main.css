@@ -1716,6 +1716,8 @@ html {
   right: -1rem;
   z-index: 50;
   height: 370px;
+  width: 100vw;
+  max-width: 1264.67px;
   --tw-translate-y: 0.25rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   border-bottom-right-radius: 0.5rem;
@@ -1984,6 +1986,10 @@ html {
   height: 75.17px;
 }
 
+.h-\[clamp\(72px\2c calc\(148\.4px_-_5\.28vw\)\2c 94px\)\] {
+  height: clamp(72px, calc(148.4px - 5.28vw), 94px);
+}
+
 .h-auto {
   height: auto;
 }
@@ -1992,16 +1998,8 @@ html {
   height: 100%;
 }
 
-.max-h-\[72px\] {
-  max-height: 72px;
-}
-
 .max-h-\[98px\] {
   max-height: 98px;
-}
-
-.min-h-\[72px\] {
-  min-height: 72px;
 }
 
 .w-14 {
@@ -2068,68 +2066,16 @@ html {
   width: calc(100% - 44px);
 }
 
+.w-\[clamp\(554px\2c calc\(-300\.5783px_\+_83\.3735vw\)\2c 900px\)\] {
+  width: clamp(554px, calc(-300.5783px + 83.3735vw), 900px);
+}
+
 .w-full {
   width: 100%;
 }
 
 .w-px {
   width: 1px;
-}
-
-.w-\[\] {
-  width: ;
-}
-
-.w-\[clamp\] {
-  width: clamp;
-}
-
-.w-\[clamp\(\)\] {
-  width: clamp();
-}
-
-.w-\[clamp\(790px\)\] {
-  width: clamp(790px);
-}
-
-.w-\[clamp\(\.790px\)\] {
-  width: clamp(.790px);
-}
-
-.w-\[clamp\2c \(\.790px\)\] {
-  width: clamp,(.790px);
-}
-
-.w-\[clamp\2c \(\2c 790px\)\] {
-  width: clamp,(,790px);
-}
-
-.w-\[clamp\2c \(110\2c 790px\)\] {
-  width: clamp,(110,790px);
-}
-
-.w-\[clamp\2c \(\2c 110vw\2c 790px\)\] {
-  width: clamp,(,110vw,790px);
-}
-
-.w-\[clamp\2c \(554px\2c 110vw\2c 790px\)\] {
-  width: clamp,(554px,110vw,790px);
-}
-
-.w-\[clamp\2c \(554px\2c 11\2c 790px\)\] {
-  width: clamp,(554px,11,790px);
-}
-
-.w-\[clamp\2c \(554px\2c 11vw\2c 790px\)\] {
-  width: clamp,(554px,11vw,790px);
-}
-
-.w-\[clamp\(554px\2c 11vw\2c 790px\)\] {
-  width: clamp(554px, 11vw, 790px);
-}
-
-.w-\[clamp\(554px\2c 110vw\2c 790px\)\] {
-  width: clamp(554px, 110vw, 790px);
 }
 
 .\!max-w-\[255\.75px\] {
@@ -2187,6 +2133,10 @@ html {
 
 .snap-start {
   scroll-snap-align: start;
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .grid-cols-2 {
