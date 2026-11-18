@@ -12,22 +12,22 @@
   }
 }
 @layer components {
-  .menu{
-    @apply text-sm font-banimode after:content-[''] after:w-full after:h-0.5 after:bg-green300 after:absolute after:bottom-2 after:right-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform duration-300 after:origin-right pt-1
+  .menu {
+    @apply text-sm font-banimode after:content-[''] after:w-full after:h-0.5 after:bg-green300 after:absolute after:bottom-2 after:right-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform duration-300 after:origin-right pt-1;
   }
   .submenu {
     @apply relative
-                after:content-[''] after:w-full after:h-0.5 after:bg-green300 after:absolute after:-bottom-1 after:right-0 after:scale-x-0 group-hover:after:scale-x-100 after:transition-transform duration-300 after:origin-center font-banimode text-sm
-  } 
-  .swiper-button-disabled {
-    @apply hidden cursor-not-allowed pointer-events-none
+                after:content-[''] after:w-full after:h-0.5 after:bg-green300 after:absolute after:-bottom-1 after:right-0 after:scale-x-0 group-hover:after:scale-x-100 after:transition-transform duration-300 after:origin-center font-banimode text-sm;
   }
-  .megamenu{
-    @apply  w-screen max-w-[1264.67px] h-[370px] rounded-b-lg bg-white z-50 absolute top-full -right-4 invisible opacity-0 translate-y-1 transition duration-150 group-hover/menu:visible group-hover/menu:opacity-100 group-hover/menu:translate-y-0 group-focus-within/menu:visible group-focus-within/menu:opacity-100 group-focus-within/menu:translate-y-0 shadow-[0px_-3px_20px_0px] shadow-gray-100 py-4
+  .swiper-button-disabled {
+    @apply hidden cursor-not-allowed pointer-events-none;
+  }
+  .megamenu {
+    @apply w-screen max-w-[1264.67px] h-[380px] rounded-b-lg bg-white z-50 absolute top-full -right-4 invisible opacity-0 translate-y-1 transition duration-150 group-hover/menu:visible group-hover/menu:opacity-100 group-hover/menu:translate-y-0 group-focus-within/menu:visible group-focus-within/menu:opacity-100 group-focus-within/menu:translate-y-0 shadow-[0px_-3px_20px_0px] shadow-gray-100;
   }
 }
-@layer utilities{
-  .cscroll::-webkit-scrollbar{
-    @apply w-2 h-2
+@layer utilities {
+  .scroll::-webkit-scrollbar {
+    @apply w-2 h-2;
   }
 }
