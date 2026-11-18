@@ -186,3 +186,46 @@ swiperConfigs.forEach((selector) => {
     },
   });
 });
+// swiper menu
+const brandCarousel = document.querySelector("#brandCarousel");
+
+if (brandCarousel) {
+  const originalItems = [...brandCarousel.children];
+
+  // کپی کردن آیتم‌ها برای حرکت بی‌نهایت
+  originalItems.forEach((item) => {
+    brandCarousel.appendChild(item.cloneNode(true));
+  });
+
+  let position = 0;
+  let animationId;
+  let isPaused = false;
+
+  const speed = 1;
+
+  function animate() {
+    if (!isPaused) {
+      position += speed;
+
+      const loopWidth = brandCarousel.scrollWidth / 2;
+
+      if (position >= loopWidth) {
+        position = 0;
+      }
+
+      brandCarousel.scrollLeft = position;
+    }
+
+    animationId = requestAnimationFrame(animate);
+  }
+
+  animate();
+
+  brandCarousel.addEventListener("mouseenter", () => {
+    isPaused = true;
+  });
+
+  brandCarousel.addEventListener("mouseleave", () => {
+    isPaused = false;
+  });
+}
