@@ -1703,6 +1703,12 @@ html {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.is-active .submenu::after {
+  content: var(--tw-content);
+  --tw-scale-x: 1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .swiper-button-disabled {
   pointer-events: none;
   display: none;
@@ -2015,13 +2021,12 @@ html {
   height: clamp(72px, calc(148.4px - 5.28vw), 94px);
 }
 
-.h-auto {
-  height: auto;
+.h-\[clamp\(94px\2c calc\(203\.65px_-_5\.21vw\)\2c 150px\)\] {
+  height: clamp(94px, calc(203.65px - 5.21vw), 150px);
 }
 
-.h-fit {
-  height: -moz-fit-content;
-  height: fit-content;
+.h-auto {
+  height: auto;
 }
 
 .h-full {
@@ -2032,60 +2037,12 @@ html {
   max-height: 300px;
 }
 
-.max-h-\[98px\] {
-  max-height: 98px;
-}
-
-.max-h-\[380px\] {
-  max-height: 380px;
-}
-
-.max-h-\[30px\] {
-  max-height: 30px;
-}
-
-.max-h-\[350px\] {
-  max-height: 350px;
-}
-
-.max-h-\[320px\] {
-  max-height: 320px;
-}
-
-.max-h-\[310px\] {
-  max-height: 310px;
-}
-
-.max-h-\[3px\] {
-  max-height: 3px;
-}
-
-.max-h-\[305px\] {
-  max-height: 305px;
-}
-
-.max-h-\[309px\] {
-  max-height: 309px;
-}
-
-.max-h-\[309\.5px\] {
-  max-height: 309.5px;
-}
-
-.max-h-\[200px\] {
-  max-height: 200px;
-}
-
-.max-h-\[307px\] {
-  max-height: 307px;
-}
-
-.max-h-\[308px\] {
-  max-height: 308px;
-}
-
 .max-h-\[360px\] {
   max-height: 360px;
+}
+
+.max-h-\[98px\] {
+  max-height: 98px;
 }
 
 .min-h-0 {
@@ -2184,14 +2141,6 @@ html {
   width: 1px;
 }
 
-.w-\[\] {
-  width: ;
-}
-
-.min-w-0 {
-  min-width: 0px;
-}
-
 .\!max-w-\[255\.75px\] {
   max-width: 255.75px !important;
 }
@@ -2204,6 +2153,10 @@ html {
   max-width: 142px;
 }
 
+.max-w-\[175\.73px\] {
+  max-width: 175.73px;
+}
+
 .max-w-\[255\.75px\] {
   max-width: 255.75px;
 }
@@ -2214,18 +2167,6 @@ html {
 
 .max-w-lg {
   max-width: 32rem;
-}
-
-.max-w-\[175\.73px\] {
-  max-width: 175.73px;
-}
-
-.max-w-full {
-  max-width: 100%;
-}
-
-.max-w-2xl {
-  max-width: 42rem;
 }
 
 .flex-1 {
@@ -2739,10 +2680,6 @@ html {
   padding-top: 10px;
 }
 
-.pb-4 {
-  padding-bottom: 1rem;
-}
-
 .text-center {
   text-align: center;
 }
@@ -2939,6 +2876,18 @@ html {
   width: 0.5rem;
 }
 
+/* ...استایل‌های خودت... */
+
+/* هاور ماندگار آیتم‌های سمت راست مگا منو */
+
+[data-menu].is-active svg {
+  color: #19B16A;
+}
+
+[data-menu].is-active svg[class*="group-hover:fill-green400"] {
+  fill: #19B16A;
+}
+
 .placeholder\:text-gray200::-moz-placeholder {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity, 1));
@@ -3009,6 +2958,16 @@ html {
 
 .group:hover .group-hover\:opacity-100 {
   opacity: 1;
+}
+
+@media (max-width: 1180px) {
+  .max-\[1180px\]\:h-full {
+    height: 100%;
+  }
+
+  .max-\[1180px\]\:max-h-full {
+    max-height: 100%;
+  }
 }
 
 @media (min-width: 1024px) {
