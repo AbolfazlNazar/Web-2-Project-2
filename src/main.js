@@ -229,3 +229,27 @@ if (brandCarousel) {
     isPaused = false;
   });
 }
+// menuuuuuuuuuuu
+// mega menu
+const mega = document.querySelector(".megamenu");
+
+if (mega) {
+  const items = mega.querySelectorAll("[data-menu]");
+  const lefts = mega.querySelectorAll("[data-left]");
+  const subs = mega.querySelectorAll("[data-sub]");
+
+  function activate(key) {
+    items.forEach((li) =>
+      li.classList.toggle("is-active", li.dataset.menu === key)
+    );
+    lefts.forEach((p) => p.classList.toggle("hidden", p.dataset.left !== key));
+    subs.forEach((p) => p.classList.toggle("hidden", p.dataset.sub !== key));
+  }
+
+  items.forEach((li) =>
+    li.addEventListener("click", () => activate(li.dataset.menu))
+  );
+
+  // پیش‌فرض: آیتم اول فعال باشه
+  if (items[0]) activate(items[0].dataset.menu);
+}
