@@ -128,7 +128,6 @@ const items = document.querySelectorAll(".item");
 
 items.forEach((item) => {
   item.addEventListener("click", () => {
-
     // حذف استایل از همه دکمه‌ها
     items.forEach((btn) => {
       btn.classList.remove("bg-green400");
@@ -152,10 +151,9 @@ items.forEach((item) => {
       text.classList.remove("text-black");
       text.classList.add("text-white");
     }
-
   });
 });
-
+// swiper haye main
 const swiperConfigs = [
   ".mySwiper-line-2",
   ".mySwiper-line-4",
@@ -187,18 +185,22 @@ swiperConfigs.forEach((selector) => {
   });
 });
 // swiper menu
-const brandCarousel = document.querySelector("#brandCarousel");
 
-if (brandCarousel) {
-  const originalItems = [...brandCarousel.children];
+// mega menu carousels
+const brandCarousels = document.querySelectorAll(".brandCarousel");
 
-  // کپی کردن آیتم‌ها برای حرکت بی‌نهایت
+brandCarousels.forEach((carousel) => {
+  const originalItems = [...carousel.querySelectorAll(".carousel-item")];
+
+  // فقط کاروسل‌هایی که حداقل 4 کارت دارند
+  if (originalItems.length < 4) return;
+
+  // کپی کارت‌ها برای حرکت بی‌نهایت
   originalItems.forEach((item) => {
-    brandCarousel.appendChild(item.cloneNode(true));
+    carousel.appendChild(item.cloneNode(true));
   });
 
   let position = 0;
-  let animationId;
   let isPaused = false;
 
   const speed = 1;
@@ -207,28 +209,30 @@ if (brandCarousel) {
     if (!isPaused) {
       position += speed;
 
-      const loopWidth = brandCarousel.scrollWidth / 2;
+      const loopWidth = carousel.scrollWidth / 2;
 
       if (position >= loopWidth) {
         position = 0;
       }
 
-      brandCarousel.scrollLeft = position;
+      carousel.scrollLeft = position;
     }
 
-    animationId = requestAnimationFrame(animate);
+    requestAnimationFrame(animate);
   }
 
   animate();
 
-  brandCarousel.addEventListener("mouseenter", () => {
+  // توقف هنگام هاور
+  carousel.addEventListener("mouseenter", () => {
     isPaused = true;
   });
 
-  brandCarousel.addEventListener("mouseleave", () => {
+  carousel.addEventListener("mouseleave", () => {
     isPaused = false;
   });
-}
+});
+
 // menuuuuuuuuuuu
 // mega menu
 const mega = document.querySelector(".megamenu");
@@ -240,14 +244,14 @@ if (mega) {
 
   function activate(key) {
     items.forEach((li) =>
-      li.classList.toggle("is-active", li.dataset.menu === key)
+      li.classList.toggle("is-active", li.dataset.menu === key),
     );
     lefts.forEach((p) => p.classList.toggle("hidden", p.dataset.left !== key));
     subs.forEach((p) => p.classList.toggle("hidden", p.dataset.sub !== key));
   }
 
   items.forEach((li) =>
-    li.addEventListener("click", () => activate(li.dataset.menu))
+    li.addEventListener("click", () => activate(li.dataset.menu)),
   );
 
   // پیش‌فرض: آیتم اول فعال باشه
