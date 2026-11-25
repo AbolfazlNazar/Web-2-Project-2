@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="./src/assets/css/main.css" />
   </head>
   <body>
-    <div class="lg:max-w-screen-xl m-auto">
+    <div class="lg:max-w-screen-xl m-auto relative">
       <!-- start header -->
-      <header class="">
+      <header class="lg:relative md:w-screen lg:w-full md:fixed lg:pt-10 z-50 md:bg-white">
         <!-- start header top -->
-        <div class="flex items-center justify-between pt-10 px-4">
-          <div class="flex items-center gap-3">
-            <div class="cursor-pointer">
+        <div class="flex items-center gap-3 justify-between md:my-3 px-4">
+          <div class="items-center gap-3 flex">
+            <div class="lg:block hidden cursor-pointer">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="32"
@@ -43,7 +43,7 @@
               </svg>
             </div>
             <button
-              class="h-12 flex items-center bg-gradient-to-r from-[#299054] to-[#1AAF69] rounded-full"
+              class="h-12 flex items-center bg-gradient-to-r from-[#299054] to-[#1AAF69] rounded-full lg:block hidden"
             >
               <span
                 class="px-4 text-base text-white font-semibold font-[banimode]"
@@ -51,9 +51,12 @@
                 ورود / ثبت‌نام
               </span>
             </button>
+            <div class="lg:hidden md:block">
+              <svg class="w-[62px] h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 62 20"><g clip-path="url(#banimode-persian_svg__a)"><path fill="#000" d="M32.045 11.859V2.221h1.247v9.774c0 .964.277 1.515 1.523 1.515h.416c1.246 0 1.524-.551 1.524-1.515V6.49H38v5.368c0 1.79-.83 2.754-2.77 2.754h-.416c-1.8 0-2.77-.826-2.77-2.754M.89 12.545V9.105h1.246v3.303c0 .826.416 1.102 1.108 1.102.64 0 1.636-.236 2.658-.598a5.7 5.7 0 0 1-.166-.944l-.664-6.553 1.246-.165.665 6.911c.111 1.074.554 1.349 1.385 1.349h.138c1.108 0 1.385-.276 1.524-1.349l.554-4.542c.194-1.542.97-2.368 2.216-2.368h3.323v7.02c0 1.378-.97 2.341-2.077 2.341-.896 0-2.384-.354-3.37-.842-.448.57-1.14.842-2.17.842h-.138c-.95 0-1.61-.226-2.037-.784-1.214.522-2.42.784-3.363.784-1.247 0-2.077-.826-2.077-2.065zm10.243.282c.762.36 2.023.683 2.635.683.691 0 1.107-.551 1.107-1.24V6.354h-1.938c-.554 0-1.025.413-1.108 1.211l-.526 4.405a5.4 5.4 0 0 1-.17.859M25.537 5.25h-1.524v1.24h1.524zm-1.662 11.977c4.153 0 6.231-1.24 6.231-3.304v-.413c0-.987-.668-1.75-1.603-1.899.515-.257.773-.95.773-1.817V5.25h-1.247v4.818c0 .964-.554 1.377-1.523 1.377h-3.462v1.101h4.57c.691 0 1.246.414 1.246 1.102v.413q0 2.065-4.985 2.064c-2.77 0-4.017-.687-4.017-2.477V6.903h-1.246v6.745c0 2.477 1.662 3.579 5.263 3.579m10.385.55h1.523V16.54H34.26z"></path></g><g fill-rule="evenodd" clip-path="url(#banimode-persian_svg__b)" clip-rule="evenodd"><path fill="#26AF6E" d="M61.948 6.832a3.28 3.28 0 0 0-2.169-2.576l-6.02-2.183L49.886.667l.769 4.401a4 4 0 0 1 2.97 1.421c1.472 1.75 1.162 4.205-.557 5.65l-4.386 3.673a.85.85 0 0 1-1.188-.103 1.1 1.1 0 0 1-.213-.52L45.265 3.646a.84.84 0 0 1 .679-1.008.846.846 0 0 1 .98.72l1.787 10.236 3.277-2.742c1.008-.842 1.206-2.252.344-3.276a2.306 2.306 0 0 0-3.025-.442L48.33 1.55 46.533.898a3.3 3.3 0 0 0-3.32.584 3.29 3.29 0 0 0-1.156 3.156l1.107 6.288 1.113 6.287a3.28 3.28 0 0 0 2.168 2.575 3.3 3.3 0 0 0 3.32-.584l2.172-1.82 3.95-3.29 3.172-2.647.528-.44 1.207-1.01a3.29 3.29 0 0 0 1.154-3.165"></path><path fill="#fff" d="M48.059 0c.09.528.176 1.018.269 1.545z"></path></g><defs><clipPath id="banimode-persian_svg__a"><path fill="#fff" d="M.889 2.222h37.11v15.556H.89z"></path></clipPath><clipPath id="banimode-persian_svg__b"><path fill="#fff" d="M42 0h20v20H42z"></path></clipPath></defs></svg>
+            </div>
           </div>
           <div
-            class="w-[555px] bg-gray100 rounded-lg h-10 flex items-center gap-1"
+            class="lg:w-[555px] md:w-full bg-gray100 rounded-lg h-10 flex items-center gap-1"
           >
             <div class="pr-2">
               <svg
@@ -85,11 +88,11 @@
                 type="search"
                 name="search-box"
                 placeholder="جست‌وجو میان هزاران برند و صدها هزار کالا"
-                class="bg-transparent w-[535px] outline-none h-10 placeholder:text-gray200 text-base font-normal font-banimode"
+                class="bg-transparent lg:w-[535px] md:w-full outline-none h-10 placeholder:text-gray200 text-base font-normal font-banimode"
               />
             </form>
           </div>
-          <div class="flex items-center cursor-pointer">
+          <div class="hidden lg:block items-center cursor-pointer">
             <svg
               width="132"
               height="24"
@@ -143,7 +146,7 @@
         </div>
         <!-- end header top -->
         <!-- start header bottom -->
-        <div class="flex items-center justify-start gap-9 mt-4 px-4">
+        <div class="hidden lg:flex lg:items-center lg:justify-start lg:gap-9 lg:mt-4 lg:px-4">
           <div class="cursor-pointer relative group/menu">
             <div class="relative flex h-16 items-center gap-2 pt-1">
               <?xml version="1.0" encoding="UTF-8"?>
@@ -3698,9 +3701,9 @@
       </header>
       <!-- end header -->
       <!-- main start -->
-      <main class="px-6">
+      <main class="px-6 lg:pt-0 md:pt-[65px]">
         <!-- main line 1 start -->
-        <div class="grid grid-cols-3 gap-4">
+        <div class="lg:grid lg:grid-cols-3 lg:gap-4">
           <!-- main 1 right start -->
           <div class="relative flex justify-start col-span-2">
             <div class="relative w-full overflow-hidden rounded-2xl">
@@ -3708,7 +3711,7 @@
               <div
                 id="mainCarousel"
                 dir="ltr"
-                class="carousel flex h-[396.87px] flex-nowrap snap-x snap-mandatory overflow-x-auto scroll-smooth rounded-2xl cursor-pointer"
+                class="carousel flex lg:!h-[clamp(319px,27.57vw,397px)] lg:min-h-[319px] lg:max-h-[397px] flex-nowrap snap-x snap-mandatory overflow-x-auto scroll-smooth rounded-2xl cursor-pointer md:!h-[clamp(521px,68.34vw,698px)] md:min-h-[521px] md:max-h-[698px]"
               >
                 <div class="carousel-item w-full shrink-0 snap-start">
                   <img
@@ -3841,7 +3844,7 @@
           </div>
           <!-- main 1 right end -->
           <!-- main 1 left start -->
-          <div class="bg-gradient-to-tr from-gray1000 to-black rounded-2xl py-[18px] px-[14px] flex flex-col justify-between">
+          <div class="bg-gradient-to-tr from-gray1000 to-black rounded-2xl py-[18px] px-[14px] flex flex-col justify-between lg:h-full md:!h-[clamp(582px,calc(61.39vw_+_112.6px),741px)] md:max-h-[741px] md:min-h-[582px] md:mt-8 md:mx-3">
             <!-- top -->
              <div class="flex justify-center gap-2 mt-2">
               <img src="./src/assets/video/heart-ace.gif" class="w-11 h-11"></img>
@@ -3849,7 +3852,7 @@
              </div>
             <!-- top -->
             <!-- middle -->
-             <div class="flex gap-[10px]">
+             <div class="flex gap-[10px] justify-between">
               <!-- right -->
                <div class="flex flex-col items-center gap-4">
                 <div class="max-w-[164px] py-1 px-3 border border-red-600 rounded-lg w-fit">
