@@ -3701,17 +3701,17 @@
       </header>
       <!-- end header -->
       <!-- main start -->
-      <main class="px-6 lg:pt-0 md:pt-[65px]">
+      <main class="lg:pt-0 md:pt-[65px]">
         <!-- main line 1 start -->
-        <div class="lg:grid lg:grid-cols-3 lg:gap-4">
+        <div class="lg:grid lg:grid-cols-3 lg:gap-4 lg:px-6">
           <!-- main 1 right start -->
           <div class="relative flex justify-start col-span-2">
-            <div class="relative w-full overflow-hidden rounded-2xl">
+            <div class="relative w-full overflow-hidden lg:rounded-2xl md:rounded-none">
               <!-- خود Carousel -->
               <div
                 id="mainCarousel"
                 dir="ltr"
-                class="carousel flex lg:!h-[clamp(319px,27.57vw,397px)] lg:min-h-[319px] lg:max-h-[397px] flex-nowrap snap-x snap-mandatory overflow-x-auto scroll-smooth rounded-2xl cursor-pointer md:!h-[clamp(521px,68.34vw,698px)] md:min-h-[521px] md:max-h-[698px]"
+                class="carousel flex lg:!h-[clamp(319px,27.57vw,397px)] lg:min-h-[319px] lg:max-h-[397px] flex-nowrap snap-x snap-mandatory overflow-x-auto scroll-smooth cursor-pointer md:!h-[clamp(521px,68.34vw,698px)] md:min-h-[521px] md:max-h-[698px]"
               >
                 <div class="carousel-item w-full shrink-0 snap-start">
                   <img
@@ -3787,7 +3787,7 @@
               <!-- Pagination خارج از Carousel -->
               <div
                 id="carouselPagination"
-                class="w-[500px] absolute bottom-5 left-60 z-30 flex -translate-x-1/2 items-center gap-2"
+                class="w-[500px] absolute bottom-5  lg:left-60 md:left-72 z-30 flex -translate-x-1/2 items-center gap-2"
               >
                 <button
                   data-slide="0"
@@ -3844,9 +3844,9 @@
           </div>
           <!-- main 1 right end -->
           <!-- main 1 left start -->
-          <div class="bg-gradient-to-tr from-gray1000 to-black rounded-2xl py-[18px] px-[14px] flex flex-col justify-between lg:h-full md:!h-[clamp(582px,calc(61.39vw_+_112.6px),741px)] md:max-h-[741px] md:min-h-[582px] md:mt-8 md:mx-3">
+          <div class="lg:!h-[clamp(319px,27.57vw,397px)] lg:min-h-[319px] lg:max-h-[397px] bg-gradient-to-tr from-gray1000 to-black rounded-2xl py-3 px-[14px] flex flex-col justify-between md:!h-[clamp(582px,calc(61.39vw_+_112.6px),741px)] md:max-h-[741px] md:min-h-[582px] lg:mt-0 lg:mx-0 md:mt-8 md:mx-4">
             <!-- top -->
-             <div class="flex justify-center gap-2 mt-2">
+             <div class="flex justify-center gap-2">
               <img src="./src/assets/video/heart-ace.gif" class="w-11 h-11"></img>
               <span class="text-white text-4xl font-banimode2">برگ برنده</span>
              </div>
@@ -3855,7 +3855,7 @@
              <div class="flex gap-[10px] justify-between">
               <!-- right -->
                <div class="flex flex-col items-center gap-4">
-                <div class="max-w-[164px] py-1 px-3 border border-red-600 rounded-lg w-fit">
+                <div class="py-1 px-3 border border-red-600 rounded-lg lg:w-fit md:w-[clamp(310px,calc(45.56vw_-_38px),428px)] flex flex-col justify-center items-center">
                   <span class="text-white text-base font-banimode whitespace-nowrap">تا برگ برنده‌ی بعدی</span>
                   <div class="flex justify-center gap-1">
                     <span class="text-white text-base font-banimode">55</span>
@@ -3865,7 +3865,7 @@
                     <span class="text-white text-base font-banimode">03</span>
                   </div>
                </div>    
-               <div class="bg-gray950  py-3 px-[10px] rounded-2xl flex flex-col items-center justify-center max-h-[73px]">
+               <div class="md:w-[clamp(310px,calc(45.56vw_-_38px),428px)] lg:w-fit bg-gray950 py-3 px-[10px] rounded-2xl flex flex-col items-center justify-center max-h-[73px]">
                 <div class="">
                   <span class="font-banimode font-bold text-2xl text-gray300 line-through">70,000,000</span>
                 </div>
@@ -3877,8 +3877,8 @@
                </div>
               <!-- left -->
                <div class="relative">
-                <div class="max-h-[220px] border border-white overflow-hidden rounded-lg cursor-pointer">
-                  <img src="./src/assets/image/445213.jpg" alt="bed" class="object-cover">
+                <div class="lg:max-h-[220px] lg:w-full md:max-h-[573px] md:w-[clamp(350px,calc(53.67vw_-_38.7px),511px)] md:max-w-[511px] md:min-w-[372px] lg:max-w-[195px] lg:min-w-[130px] border border-white overflow-hidden rounded-lg cursor-pointer">
+                  <img src="./src/assets/image/445213.jpg" alt="bed" class="object-cover w-full">
                 </div>
                 <div class="w-[60px] h-[60px] bg-gradient-to-r from-red300 to-orange300 rounded-full absolute -top-[30px] left-1 flex items-center justify-center">
                   <span class="text-white font-banimode text-2xl text-bold">90%</span>
@@ -3898,7 +3898,7 @@
         </div>
         <!-- main line 1 end -->
         <!-- main line 2 start -->
-        <div class="w-full mt-8 rounded-3xl overflow-hidden">
+        <div class="lg:px-6 w-full mt-8 rounded-3xl overflow-hidden">
           <!-- background swiper top -->
           <div class="p-6 h-24 bg-green500 flex items-center justify-between">
             <!-- right -->
@@ -4946,7 +4946,7 @@
         </div>
         <!-- main line 2 end -->
         <!-- main line 3 start -->
-        <div class="flex justify-between gap-4 mt-10">
+        <div class="lg:px-6 flex justify-between gap-4 mt-10">
           <div class="flex flex-col gap-2 items-center cursor-pointer">
             <img
               src="./src/assets/image/imgi_48_1793518110.png"
@@ -5014,7 +5014,7 @@
         </div>
         <!-- main line 3 end -->
         <!-- main line 4 start -->
-        <div class="w-full mt-8 rounded-3xl overflow-hidden">
+        <div class="lg:px-6 w-full mt-8 rounded-3xl overflow-hidden">
           <!-- background swiper top -->
           <div class="p-6 bg-white25">
             <!-- top -->
@@ -8551,7 +8551,7 @@
         </div>
         <!-- main line 4 end -->
         <!-- main line 5 satrt -->
-        <div class="mt-10">
+        <div class="lg:px-6 mt-10">
           <!-- main line 5 top -->
           <div class="flex items-center justify-between">
             <!-- right -->
@@ -8672,7 +8672,7 @@
         </div>
         <!-- main line 5 end -->
         <!-- main line 6 start -->
-        <div class="mt-8 flex items-center justify-between gap-20">
+        <div class="lg:px-6 mt-8 flex items-center justify-between gap-20">
           <!-- right -->
           <div class="">
             <!-- top -->
@@ -9022,7 +9022,7 @@
         </div>
         <!-- main line 6 end -->
         <!-- main line 7 start -->
-        <div class="w-full mt-8 rounded-3xl overflow-hidden">
+        <div class="lg:px-6 w-full mt-8 rounded-3xl overflow-hidden">
           <!-- background swiper top -->
           <div class="p-6 bg-white25">
             <!-- top -->
@@ -12533,7 +12533,7 @@
         </div>
         <!-- main line 7 end -->
         <!-- main line 8 start -->
-        <div class="w-full mt-8 rounded-3xl overflow-hidden">
+        <div class="lg:px-6 w-full mt-8 rounded-3xl overflow-hidden">
           <!-- background swiper top -->
           <div class="p-6 bg-white25">
             <!-- top -->
@@ -13746,7 +13746,7 @@
         </div>
         <!-- main line 8 end -->
         <!-- main line 9 start -->
-        <div class="w-full mt-8 rounded-3xl overflow-hidden">
+        <div class="lg:px-6 w-full mt-8 rounded-3xl overflow-hidden">
           <!-- background swiper top -->
           <div class="p-6 bg-white25">
             <!-- top -->
@@ -15333,7 +15333,7 @@
         </div>
         <!-- main line 9 end -->
         <!-- main line 10 start -->
-        <div class="w-full mt-8 rounded-3xl overflow-hidden">
+        <div class="lg:px-6 w-full mt-8 rounded-3xl overflow-hidden">
           <!-- background swiper top -->
           <div class="p-6 bg-white25">
             <!-- top -->
@@ -18658,7 +18658,7 @@
         </div>
         <!-- main line 10 end -->
         <!-- main line 11 start -->
-        <div class="w-full mt-8 rounded-3xl overflow-hidden">
+        <div class="lg:px-6 w-full mt-8 rounded-3xl overflow-hidden">
           <!-- background swiper top -->
           <div class="p-6">
             <div class="flex items-center justify-between">
@@ -18952,7 +18952,7 @@
           <!-- background swiper bottom -->
         </div>
         <!-- main line 11 end -->
-        <hr class="bg-gray-400 mt-7" />
+        <hr class="lg:px-6 bg-gray-400 mt-7" />
       </main>
       <!-- main end -->
       <!-- start footer -->
