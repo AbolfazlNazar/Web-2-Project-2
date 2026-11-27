@@ -153,8 +153,10 @@ items.forEach((item) => {
     }
   });
 });
+
 // swiper haye main
 const swiperConfigs = [
+  ".mySwiper-line-1-tablet",
   ".mySwiper-line-2",
   ".mySwiper-line-4",
   ".mySwiper-line-7",
@@ -167,16 +169,46 @@ const swiperConfigs = [
 swiperConfigs.forEach((selector) => {
   const swiperElement = document.querySelector(selector);
 
-  // والد مشترک اسلایدر و دکمه‌های آن
+  if (!swiperElement) return;
+
+  // والد مشترک اسلایدر و دکمه‌ها
   const parent = swiperElement.parentElement;
 
   const nextButton = parent.querySelector(".swiper-button-next");
   const prevButton = parent.querySelector(".swiper-button-prev");
 
   new Swiper(swiperElement, {
-    slidesPerView: selector === ".mySwiper-line-11" ? 4 : 5,
+    slidesPerView:
+      selector === ".mySwiper-line-1-tablet"
+        ? 2
+        : selector === ".mySwiper-line-11"
+          ? 4
+          : 5,
+
     spaceBetween: 15,
     loop: false,
+
+    breakpoints: {
+      768: {
+        slidesPerView:
+          selector === ".mySwiper-line-1-tablet"
+            ? 2.3
+            : selector === ".mySwiper-line-11"
+              ? 3.2
+              : 5,
+        slidesOffsetAfter: 28,
+        slidesOffsetBefore: 28,
+      },
+
+      1024: {
+        slidesPerView:
+          selector === ".mySwiper-line-1-tablet"
+            ? 2
+            : selector === ".mySwiper-line-11"
+              ? 4
+              : 5,
+      },
+    },
 
     navigation: {
       nextEl: nextButton,
@@ -184,8 +216,8 @@ swiperConfigs.forEach((selector) => {
     },
   });
 });
-// swiper menu
 
+// swiper menu
 // mega menu carousels
 const brandCarousels = document.querySelectorAll(".brandCarousel");
 
